@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dataStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="brand">
+            <div class="logo">
+                <h1>4'S PIZZA</h1>
+            </div>
+            <div class="brand-left">
+                <div class="brand-left-item">
+                    <span>Chi nhánh trung tâm</span>
+                    <i style="cursor: pointer;" onclick="changeCS()" class="change fa-solid fa-location-dot"></i>
+                    <div class="changeBrand">
+                        <a href="Home.html" class="brand1">Chi nhánh trung tâm</a>
+                        <a href="CoSo1.html" class="brand1">Chi nhánh 1</a>
+                        <a href="CoSo2.html" class="brand2">Chi nhánh 2</a>
+                    </div>
+                </div>
+                <div class="brand-left-item">
+                    <span>Thiết lập</span>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="brand-left-item">
+                    <span>0399395344</span>
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-left">
+                <ul>
+                    <li><i class="fa-solid fa-eye"></i><a class="whiteColor" href="Home.html">Tổng quan</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="Products.html">Hàng hoá</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="elements.html">Nguyên liệu</a></li>
+                    <li><i class="fa-brands fa-buromobelexperte"></i><a class="whiteColor"
+                            href="Room.html">Phòng/Bàn</a></li>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i><a class="whiteColor" href="">Giao dịch</a>
+                    </li>
+                    <li><i class="fa-solid fa-user-tie"></i><a class="whiteColor" href="customer.html">Khách hàng</a>
+                    </li>
+                    <li><i class="fa-solid fa-users"></i><a class="whiteColor">Nhân viên</a></li>
+                    <li><i class="fa-solid fa-dollar-sign"></i><a class="whiteColor" href="">Sổ quỹ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="body-left">
+            <div class="search">
+                <h3 class="search-head">Tìm kiếm</h3>
+                <div class="search-group">
+                    <input type="text" class="search-input" name="" placeholder="Theo mã, tên hàng" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="menu-head">Loại thực đơn</h3>
+                <input type="checkbox" name="food" id="food">
+                <label for="food">Đồ ăn</label><br>
+                <input type="checkbox" name="drink" id="drink">
+                <label for="drink">Đồ uống</label><br>
+                <input type="checkbox" name="khac" id="khac">
+                <label for="khac">Khác</label><br>
+            </div>
+            <div class="goods">
+                <h3 class="goods-head">Loại hàng</h3>
+                <input type="checkbox" name="normal" id="normal">
+                <label for="normal">Hàng hoá thường</label><br>
+                <input type="checkbox" name="cook" id="cook">
+                <label for="cook">Chế biến</label><br>
+                <input type="checkbox" name="service" id="service">
+                <label for="service">Dịch vụ</label><br>
+                <input type="checkbox" name="khac2" id="khac2">
+                <label for="khac2">Dịch vụ</label><br>
+            </div>
+            <div class="group-goods">
+                <h3 class="group-goods-head">Tất cả</h3>
+                <ul class="goods-list">
+                    <li>Bia & Thuốc lá</li>
+                    <li>Classic Cocktils</li>
+                    <li>Món khai vị</li>
+                    <li>Súp</li>
+                    <li>Tea</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="name-top">
+                <h2 class="name-product">Khách hàng</h2>
+            </div>
+            <div class="list-table-products">
+                <button id="openAddPage">Thêm</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Hình ảnh</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
+                            <th>Địa chỉ</th>
+                            <th>Tổng bán</th>
+                            <th>Mô tả</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- edit modal -->
+    <div id="editModal" class="modal">
+
+    </div>
+
+    <div id="addModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="form">
+                <label for="">Tên sản phẩm</label>
+                <br>
+                <input type="text" id="name">
+                <br>
+                <label for="">Hình ảnh</label>
+                <br>
+                <input style="margin: 10px 0;" type="file" id="image">
+                <br>
+                <label for="">Giá</label>
+                <br>
+                <input type="text" id="price">
+                <br>
+                <label for="">Giá khuyến mãi</label>
+                <br>
+                <input type="text" id="sale">
+                <br>
+                <label for="">Danh mục</label>
+                <br>
+                <select style="width: 100%; height: 44px; margin: 10px 0;" id="category">
+                    <option value="Tivi">Tivi</option>
+                    <option value="máy giặt">Máy giăt</option>
+                    <option value="tủ lạnh">Tủ lạnh</option>
+                </select>
+                <br>
+                <label for="">Hotdeal</label>
+                <br>
+                <input type="checkbox" id="hotdeal">
+                <br>
+                <label for="">Mô tả</label>
+                <br>
+                <input type="text" id="description">
+                <br>
+                <button id="addPro">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+    <script src="data.js"></script>
+</body>
+
+</html>

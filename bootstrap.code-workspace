@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../bootstrap"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "TKW nang cao"
+  }
+}

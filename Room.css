@@ -1,0 +1,144 @@
+.room-menu {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.room-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(15, 145, 15);
+    border: none;
+    cursor: pointer;
+}
+
+.item-row {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #ccc;
+}
+
+.item-spec {
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+}
+
+.spec-active {
+    display: block;
+}
+
+.spec-info p {
+    max-width: 50%;
+    margin: 10px 0;
+    border-bottom: 1px solid #666;
+}
+
+
+.deleteRoom {
+    margin: 15px 0;
+    background-color: rgb(225, 86, 86);
+}
+
+.item-row:hover {
+    background-color: rgb(152, 218, 152);
+    cursor: pointer;
+}
+
+/* Css cho item room */
+
+.wrapper {
+    padding: 15px 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #666;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-gr {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#image,
+#category {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#hotdeal {
+    padding: 12px 20px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

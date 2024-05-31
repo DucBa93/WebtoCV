@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Heading -->
+    <div class="heading">
+        <div class="brand">
+            <div class="logo">
+                <h1>4'S PIZZA</h1>
+            </div>
+            <div class="brand-left">
+                <div class="brand-left-item">
+                    <span>Chi nhánh trung tâm</span>
+                    <i style="cursor: pointer;" onclick="changeCS()" class="change fa-solid fa-location-dot"></i>
+                    <div class="changeBrand">
+                        <a href="Home.html" class="brand1">Chi nhánh trung tâm</a>
+                        <a href="CoSo1.html" class="brand1">Chi nhánh 1</a>
+                        <a href="CoSo2.html" class="brand2">Chi nhánh 2</a>
+                    </div>
+                </div>
+                <div class="brand-left-item">
+                    <span>Thiết lập</span>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="brand-left-item">
+                    <span>0399395344</span>
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-left">
+                <ul>
+                    <li><i class="fa-solid fa-eye"></i><a class="whiteColor" href="Home.html">Tổng quan</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="Products.html">Hàng hoá</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="elements.html">Nguyên liệu</a></li>
+                    <li><i class="fa-brands fa-buromobelexperte"></i><a class="whiteColor"
+                            href="Room.html">Phòng/Bàn</a></li>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i><a class="whiteColor"
+                            href="giaoDich.html">Giao dịch</a>
+                    </li>
+                    <li><i class="fa-solid fa-user-tie"></i><a class="whiteColor" href="customer.html">Khách hàng</a>
+                    </li>
+                    <li><i class="fa-solid fa-users"></i><a class="whiteColor" href="staff.html">Nhân viên</a></li>
+                    <li><i class="fa-solid fa-dollar-sign"></i><a class="whiteColor" href="soQuy.html">Sổ quỹ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="body-left">
+            <div class="result-saling">
+                <p class="result-saling-text">KẾT QUẢ BÁN HÀNG HÔM NAY</p>
+                <div class="result-flex">
+                    <div class="result-item">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <div class="result-completed">
+                            <p class="head">3 đơn đã xong</p>
+                            <p class="number">3,816,000</p>
+                            <p class="fade">Hôm qua 8.660.000</p>
+                        </div>
+                        <div class="result-arrow">
+                            <i style="color: green;" class="fa-solid fa-arrow-down"></i>
+                            <p>56%</p>
+                        </div>
+                    </div>
+                    <div class="colum"></div>
+                    <div class="result-item">
+                        <i class="fa-solid fa-pen"></i>
+                        <div class="result-completed">
+                            <p class="head">0 đơn đang phục vụ</p>
+                            <p>0</p>
+                        </div>
+
+                    </div>
+                    <div class="colum"></div>
+
+                    <div class="result-item">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="result-completed">
+                            <p class="head">Khách hàng</p>
+                            <p style="color: aqua;" class="number">13</p>
+                            <p class="fade">Hôm qua 9</p>
+                        </div>
+                        <div class="result-arrow">
+                            <i style="color: green;" class="fa-solid fa-arrow-up"></i>
+                            <p>44%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-revenue">
+                <div class="revenue-top">
+                    <div class="revenue-number">
+                        <p style="font-weight: bolder;">DOANH SỐ HÔM NAY</p>
+                        <i class="fa-solid fa-arrow-right"></i> <span>6,100,000</span>
+                    </div>
+                    <div class="revenue-date">
+                        <span class="date-head" style="color: rgb(75, 75, 194); font-weight: bold;">Hôm nay</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="revenue-bot">
+                    <p class="revenue-item">Theo ngày</p>
+                    <p style="border-bottom: 3px solid rgb(33, 84, 161);" class="revenue-item active">Theo giờ</p>
+                    <p class="revenue-item">Theo thứ</p>
+                </div>
+                <img src="./image/Ảnh màn hình 2024-05-07 lúc 14.04.49.png" alt="" class="revenue-img">
+
+            </div>
+            <div class="customer-quantity">
+                <div class="revenue-top">
+                    <div class="revenue-number">
+                        <p style="font-weight: bolder;">SỐ LƯỢNG KHÁCH HÔM NAY</p>
+                        <i class="fa-solid fa-arrow-right"></i> <span>9</span>
+                    </div>
+                    <div class="revenue-date">
+                        <span class="date-head" style="color: rgb(75, 75, 194); font-weight: bold;">Hôm nay</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <img src="./image/img2.png" alt="" class="customer-img">
+            </div>
+            <div class="best-saling">
+                <div class="revenue-top">
+                    <div class="revenue-number">
+                        <p style="font-weight: bolder;">TOP 10 HÀNG HÓA BÁN CHẠY 7 NGÀY QUA </p>
+                        <span>THEO DOANH THU</span> <i class="fa-solid fa-arrow-down"></i>
+
+                    </div>
+                    <div class="revenue-date">
+                        <span class="date-head" style="color: rgb(75, 75, 194); font-weight: bold;">7 ngày qua</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+                <img src="./image/img3.png" alt="" class="best-img">
+            </div>
+        </div>
+        <div class="body-right">
+            <div style="text-align: center; margin-bottom: 15px;" class="activity">
+                <p class="activity-head">CÁC HOẠT ĐỘNG GẦN ĐÂY</p>
+                <div class="line-under"></div>
+            </div>
+            <div class="activ-list">
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activ-item">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <div style="display: flex; flex-direction: column;" class="activ-colum">
+                        <p class="activ-item-top"><a href="#">Hoàng - Kinh Doanh</a> vừa <a href="#">bán đơn giao
+                                hàng</a> với giá trị
+                        <p style="font-size: 15px;">2,468,000</p>
+                        </p>
+                        <p class="activ-item-fade">40 minutes ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line-colum"></div>
+
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+</body>
+
+</html>

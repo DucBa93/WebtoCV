@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="elements.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="brand">
+            <div class="logo">
+                <h1>4'S PIZZA</h1>
+            </div>
+            <div class="brand-left">
+                <div class="brand-left-item">
+                    <span>Chi nhánh trung tâm</span>
+                    <i style="cursor: pointer;" onclick="changeCS()" class="change fa-solid fa-location-dot"></i>
+                    <div class="changeBrand">
+                        <a href="CoSo1.html" class="brand1">Chi nhánh 1</a>
+                        <a href="CoSo2.html" class="brand2">Chi nhánh 2</a>
+                    </div>
+                </div>
+                <div class="brand-left-item">
+                    <span>Thiết lập</span>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="brand-left-item">
+                    <span>0399395344</span>
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-left">
+                <ul>
+                    <li><i class="fa-solid fa-eye"></i><a class="whiteColor" href="Home.html">Tổng quan</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="Products.html">Hàng hoá</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="elements.html">Nguyên liệu</a></li>
+                    <li><i class="fa-brands fa-buromobelexperte"></i><a class="whiteColor"
+                            href="Room.html">Phòng/Bàn</a></li>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i><a class="whiteColor" href="">Giao dịch</a>
+                    </li>
+                    <li><i class="fa-solid fa-user-tie"></i><a class="whiteColor" href="">Khách hàng</a></li>
+                    <li><i class="fa-solid fa-users"></i><a class="whiteColor">Nhân viên</a></li>
+                    <li><i class="fa-solid fa-dollar-sign"></i><a class="whiteColor" href="">Sổ quỹ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="body-left">
+            <div class="search">
+                <h3 class="search-head">Tìm kiếm</h3>
+                <div class="search-group">
+                    <input type="text" class="search-input" name="" placeholder="Theo mã, tên hàng" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="menu-head">Loại thực đơn</h3>
+                <div class="box-flex">
+                    <label for="food">Đồ ăn</label>
+                    <input type="checkbox" name="food" id="food">
+                </div>
+                <div class="box-flex">
+                    <label for="drink">Đồ uống</label>
+                    <input type="checkbox" name="drink" id="drink">
+                </div>
+                <div class="box-flex">
+                    <label for="khac">Khác</label>
+                    <input type="checkbox" name="khac" id="khac">
+                </div>
+            </div>
+            <div class="goods">
+                <h3 class="goods-head">Loại hàng</h3>
+                <div class="box-flex">
+                    <label for="normal">Hàng hoá thường</label><br>
+                    <input type="checkbox" name="normal" id="normal">
+                </div>
+                <div class="box-flex">
+                    <label for="cook">Chế biến</label><br>
+                    <input type="checkbox" name="cook" id="cook">
+                </div>
+                <div class="box-flex">
+                    <label for="service">Dịch vụ</label><br>
+                    <input type="checkbox" name="service" id="service">
+                </div>
+                <div class="box-flex">
+                    <label for="khac2">Combo-đóng gói</label><br>
+                    <input type="checkbox" name="khac2" id="khac2">
+                </div>
+            </div>
+            <div class="group-goods">
+                <h3 class="group-goods-head">Tất cả</h3>
+                <ul class="goods-list">
+                    <li>Bia & Thuốc lá</li>
+                    <li>Classic Cocktils</li>
+                    <li>Món khai vị</li>
+                    <li>Súp</li>
+                    <li>Tea</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="name-top">
+                <h2 class="name-product">Hàng Hoá</h2>
+                <button onclick="add()" class="add">Thêm mới +</button>
+            </div>
+            <div class="list-table-products">
+                <div class="list-item ">
+
+                    <i class="fa-regular fa-star"></i>
+                    <h4>Mã hàng hoá</h4>
+                    <h4>Tên hàng</h4>
+                    <h4>Loại thục đơn</h4>
+                    <h4>Giá bán</h4>
+                    <h4>Giá vốn</h4>
+                    <h4>Tồn kho</h4>
+                </div>
+
+                <div class="list-elements">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="addPro-form">
+        <div class="addPro-container">
+            <div class="addPro-flex">
+                <h3>Thong tin san pham</h3>
+                <i style="cursor: pointer;" class="fa-solid fa-xmark hideForm"></i>
+            </div>
+            <label for="maSP">Ma san pham</label>
+            <input type="text" name="maSP" class="maSP">
+            <label for="namreSP">Ten nguyen lieu</label>
+            <input type="text" name="nameSP" class="nameSP">
+            <label for="img">Chon anh</label>
+            <input type="file" name="" class="img">
+            <label for="typeSP">Loai thuc don</label>
+            <input type="text" name="typeSP" class="typeSP">
+            <label for="saleSP">Gia ban</label>
+            <input type="text" name="saleSP" class="saleSP">
+            <label for="costSP">Gia von</label>
+            <input type="text" name="costSP" class="costSP">
+            <label for="remainSP">So luong muon nhap</label>
+            <input type="text" name="remainSP" class="remainSP">
+            <button class="addElement">Them san pham</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="jquery.js"></script>
+</body>
+
+</html>

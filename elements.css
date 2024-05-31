@@ -1,0 +1,165 @@
+.deliveryElements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.ele-active {
+    display: flex;
+}
+
+.element-container {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.elements-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.elements-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 5px;
+    width: 100%;
+}
+
+.item-top {
+    padding: 15px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-spec {
+    border: 1.5px solid rgb(56, 151, 56);
+    padding: 25px;
+    background-color: #fff;
+}
+
+.item-spec h4 {
+    margin-bottom: 15px;
+}
+
+.item-spec h2 {
+    color: rgb(11, 148, 11);
+    margin-bottom: 15px;
+}
+
+.item-flex span {
+    margin-right: 15px;
+
+}
+
+.item-spec-bot {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-top: 20px;
+
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 10px;
+    border-bottom: 1px solid #cdcbcb;
+    cursor: pointer;
+}
+
+.item-button-gr {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+button {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: rgb(31, 167, 31);
+    color: #fff;
+}
+
+.transpot,
+.update {
+    background-color: rgb(31, 167, 31);
+}
+
+.deletePro {
+    background-color: rgb(229, 60, 60);
+}
+
+.addPro-form {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.addPro-container {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.addPro-container h3 {
+    margin-bottom: 15px;
+}
+
+.addPro-container input {
+    margin: 15px 0;
+}
+
+.addPro-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showForm {
+    display: flex;
+}

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.brand .logo h1 {
+    font-size: 36px;
+    color: rgb(21, 103, 154);
+    font-weight: 700;
+}
+
+.brand-left {
+    display: flex;
+}
+
+.brand-left-item span {
+    margin-right: 10px;
+}
+
+.brand-left-item i {
+    margin-right: 20px;
+}
+
+.navigation {
+    display: flex;
+    background-color: rgb(55, 134, 183);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-left ul li {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px 10px;
+    color: #fff;
+}
+
+.nav-left ul li:hover {
+    background-color: rgb(43, 105, 187);
+    transition: all .2s linear;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.main-body {
+    background-color: #e7f3f6;
+    min-height: 100vh;
+    padding: 15px 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.body-left {
+    flex: 8;
+}
+
+.result-saling {
+    padding: 25px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+
+}
+
+.result-saling .result-saling-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+.result-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.fa-bitcoin {
+    color: #ff4141;
+    font-size: 40px;
+    z-index: 1000;
+}
+
+.result-item .head {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.result-item .number {
+    font-size: 23px;
+    color: #ff4141;
+}
+
+.result-item .fade {
+    color: #ccc;
+}
+
+.result-arrow {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.fa-pen {
+    color: green;
+    font-size: 40px;
+}
+
+.fa-user {
+    color: rgb(68, 153, 193);
+    font-size: 40px;
+}
+
+.colum {
+    height: 100px;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.total-revenue {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.total-revenue .revenue-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.revenue-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+.revenue-number {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.revenue-bot {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.customer-quantity {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.customer-quantity .customer-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.best-saling {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.best-saling .best-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.activ-list {
+    z-index: 1000;
+}
+
+.body-right {
+    overflow: scroll;
+    flex: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 800px;
+    width: 300px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.line-colum {
+    z-index: 1;
+    top: 117px;
+    left: 40px;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.whiteColor {
+    color: #fff;
+}
+
+i {
+    margin: 0 10px;
+}
+
+.line-under {
+    margin-top: 15px;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #666;
+}
+
+.activity-head {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.activ-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.activ-item .activ-item-top {
+    font-size: 13px;
+}
+
+.activ-item .activ-item-fade {
+    font-size: 11px;
+    color: #ccc;
+}

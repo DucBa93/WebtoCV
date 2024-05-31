@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "maPro": "SP2003",
+      "image": "./image/lemon juice.webp",
+      "name": "Hanh la",
+      "type": "Gia vi che bien",
+      "cost": 10000,
+      "sale": 15000,
+      "remaining": 100
+    },
+    {
+      "id": 2,
+      "maPro": "SP2004",
+      "image": "./image/img2.png",
+      "name": "Hanh kho",
+      "type": "Gia vi che bien",
+      "cost": 10000,
+      "sale": 15000,
+      "remaining": 90
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.brand .logo h1 {
+    font-size: 36px;
+    color: rgb(21, 103, 154);
+    font-weight: 700;
+}
+
+.brand-left {
+    display: flex;
+}
+
+.brand-left-item span {
+    margin-right: 10px;
+}
+
+.brand-left-item i {
+    margin-right: 20px;
+}
+
+.navigation {
+    display: flex;
+    background-color: rgb(55, 134, 183);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-left ul li {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px 10px;
+    color: #fff;
+}
+
+.nav-left ul li:hover {
+    background-color: rgb(43, 105, 187);
+    transition: all .2s linear;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+i {
+    margin: 0 10px;
+}
+
+.whiteColor {
+    color: #fff;
+}
+
+.change {
+    position: relative;
+}
+
+.changeBrand {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-width: 150px;
+    min-height: 50px;
+    padding: 0 10px;
+    background-color: #232222;
+    z-index: 1000;
+    margin-left: 50px;
+    margin-top: 4px;
+    border-radius: 5px;
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.changeBrand a {
+    margin: 15px 0;
+    color: #fff;
+}
+
+.changeBrand a:hover {
+    text-decoration: underline;
+}
