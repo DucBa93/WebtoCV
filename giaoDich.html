@@ -4,10 +4,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="giaoDich.css">
+    <link rel="stylesheet" href="elements.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
 <body>
+    <div class="heading">
+        <div class="brand">
+            <div class="logo">
+                <h1>4'S PIZZA</h1>
+            </div>
+            <div class="brand-left">
+                <div class="brand-left-item">
+                    <span>Chi nhánh trung tâm</span>
+                    <i style="cursor: pointer;" onclick="changeCS()" class="change fa-solid fa-location-dot"></i>
+                    <div class="changeBrand">
+                        <a href="CoSo1.html" class="brand1">Chi nhánh 1</a>
+                        <a href="CoSo2.html" class="brand2">Chi nhánh 2</a>
+                    </div>
+                </div>
+                <div class="brand-left-item">
+                    <span>Thiết lập</span>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="brand-left-item">
+                    <span>0399395344</span>
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-left">
+                <ul>
+                    <li><i class="fa-solid fa-eye"></i><a class="whiteColor" href="Home.html">Tổng quan</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="Products.html">Hàng hoá</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="elements.html">Nguyên liệu</a></li>
+                    <li><i class="fa-brands fa-buromobelexperte"></i><a class="whiteColor"
+                            href="Room.html">Phòng/Bàn</a></li>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i><a class="whiteColor"
+                            href="giaoDich.html">Giao dịch</a>
+                    </li>
+                    <li><i class="fa-solid fa-user-tie"></i><a class="whiteColor" href="">Khách hàng</a></li>
+                    <li><i class="fa-solid fa-users"></i><a class="whiteColor">Nhân viên</a></li>
+                    <li><i class="fa-solid fa-dollar-sign"></i><a class="whiteColor" href="">Sổ quỹ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="body-left">
+            <div class="search">
+                <h3 class="search-head">Tìm kiếm</h3>
+                <div class="search-group">
+                    <input type="text" class="search-input-Ele" name="" placeholder="Theo mã, tên hàng" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="menu-head">Loại thực đơn</h3>
+                <div class="box-flex">
+                    <label for="food">Đồ ăn</label>
+                    <input type="checkbox" name="food" id="food">
+                </div>
+                <div class="box-flex">
+                    <label for="drink">Đồ uống</label>
+                    <input type="checkbox" name="drink" id="drink">
+                </div>
+                <div class="box-flex">
+                    <label for="khac">Khác</label>
+                    <input type="checkbox" name="khac" id="khac">
+                </div>
+            </div>
+            <div class="goods">
+                <h3 class="goods-head">Loại hàng</h3>
+                <div class="box-flex">
+                    <label for="normal">Hàng hoá thường</label><br>
+                    <input type="checkbox" name="normal" id="normal">
+                </div>
+                <div class="box-flex">
+                    <label for="cook">Chế biến</label><br>
+                    <input type="checkbox" name="cook" id="cook">
+                </div>
+                <div class="box-flex">
+                    <label for="service">Dịch vụ</label><br>
+                    <input type="checkbox" name="service" id="service">
+                </div>
+                <div class="box-flex">
+                    <label for="khac2">Combo-đóng gói</label><br>
+                    <input type="checkbox" name="khac2" id="khac2">
+                </div>
+            </div>
+            <div class="group-goods">
+                <h3 class="group-goods-head">Tất cả</h3>
+                <ul class="goods-list">
+                    <li>Bia & Thuốc lá</li>
+                    <li>Classic Cocktils</li>
+                    <li>Món khai vị</li>
+                    <li>Súp</li>
+                    <li>Tea</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="name-top">
+                <h2 class="name-product">Hoá đơn</h2>
+                <button onclick="add()" class="add"><i class="fa-solid fa-file-export"></i>Xuat file<i
+                        class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <div class="list-table-products">
+                <div class="list-item ">
+
+                    <i class="fa-regular fa-square"></i>
+                    <h4>Mã hoá đơn</h4>
+                    <h4>Thời gian(Giờ đi)</h4>
+                    <h4>Khách hàng</h4>
+                    <h4>Tổng tiền hàng</h4>
+                    <h4>Giảm giá</h4>
+                    <h4>Khách đã trả</h4>
+                </div>
+
+                <div class="list-elements">
+                    <div class="list-item-trade">
+                        <div class="trade-top">
+                            <i class="fa-regular fa-square"></i>
+                            <h4>HD000050</h4>
+                            <h4>04/06/2024 21:00</h4>
+                            <h4>Phạm Thu Hương</h4>
+                            <h4>875,000</h4>
+                            <h4>9,000</h4>
+                            <h4>866,000</h4>
+                        </div>
+                        <div class="show-trade">
+                            <div class="show-trade-top">
+                                <div class="trade-item">
+                                    <div class="flex">
+                                        <p>Mã hoá đơn:</p>
+                                        <p style="font-weight: bold;">HD000050</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p>Gio den:</p>
+                                        <p>04/06/2024 21:00</p>
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div class="flex">
+                                        <p>Thoi gian: </p>
+                                        <i class="fa-solid fa-circle-exclamation"></i>
+                                        <input placeholder="04/06/2024 21:00" type="text" name="" id="">
+                                    </div>
+                                    <div class="flex">
+                                        <p>Khach hang: </p>
+                                        <p>Phạm Thu Hương</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p>Bang gia: </p>
+                                        <p>Bang gia chung</p>
+                                    </div>
+                                    <p>Ma dat hang: </p>
+                                </div>
+
+                                <div class="trade-item">
+                                    <div class="flex">
+                                        <p>Trang thai:</p>
+                                        <p>Hoan Thanh</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p>Loai don:</p>
+                                        <p>Giao di</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p>Chi nhanh:</p>
+                                        <p>Chi nhanh trung tam</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p>Nguoi nhan don:</p>
+                                        <select name="user" id="">
+                                            <option value="">Huong-Ke toan</option>
+                                            <option value="">Hoang-Kinh doanh</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex">
+                                        <p>Nguoi tao:</p>
+                                        <p>Huong-Ke toan</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p>So khach</p>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="flex">
+                                        <p>Kenh ban:</p>
+                                        <select name="user" id="">
+                                            <option value="">Khach den truc tiep</option>
+                                            <option value="">FaceBook</option>
+                                            <option value="">NowFoods</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="trade-item">
+                                    <div class="flex">
+                                        <i style="color: #ccc;" class="fa-solid fa-pencil"></i>
+                                        <p style="color: #ccc;">Ghi chu ...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="show-trade-mid">
+                                <div class="mid-container">
+                                    <div class="mid-item header">
+                                        <p>Ma hang hoa</p>
+                                        <p>Ten hang</p>
+                                        <p>So luong</p>
+                                        <p>Don gia</p>
+                                        <p>Giam gia</p>
+                                        <p>Gia ban</p>
+                                        <p>Thanh tien</p>
+                                    </div>
+                                    <div class="mid-item">
+                                        <p>SP2003</p>
+                                        <p>Xuc xich duc</p>
+                                        <p>11</p>
+                                        <p>125,000</p>
+                                        <p>0%</p>
+                                        <p>120,000</p>
+                                        <p>1,375,000</p>
+                                    </div>
+                                    <div class="mid-item">
+                                        <p>SP2004</p>
+                                        <p>Pizza Pho Mai</p>
+                                        <p>12</p>
+                                        <p>125,000</p>
+                                        <p>0%</p>
+                                        <p>125,000</p>
+                                        <p>1,500,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="show-trade-bot">
+                                <div class="total">
+                                    <div class="total-item">
+                                        <p>Tong so luong :</p>
+                                        <p>24</p>
+
+                                    </div>
+                                    <div class="total-item">
+                                        <p>Tong tien hang :</p>
+                                        <p>1,875,000</p>
+                                    </div>
+                                </div>
+                                <div class="btn-gr">
+                                    <button class="file"><i class="fa-solid fa-file-export"></i>Xuat file</button>
+                                    <button class="copy"><i class="fa-regular fa-copy"></i>Sao chep</button>
+                                    <button class="thoat"><i class="fa-solid fa-xmark"></i>Huy bo</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item-trade">
+                        <div class="trade-top">
+                            <i class="fa-regular fa-square"></i>
+                            <h4>HD000050</h4>
+                            <h4>04/06/2024 21:00</h4>
+                            <h4>Phạm Thu Hương</h4>
+                            <h4>875,000</h4>
+                            <h4>9,000</h4>
+                            <h4>866,000</h4>
+                        </div>
+                    </div>
+                    <div class="list-item-trade">
+                        <div class="trade-top">
+                            <i class="fa-regular fa-square"></i>
+                            <h4>HD000050</h4>
+                            <h4>04/06/2024 21:00</h4>
+                            <h4>Phạm Thu Hương</h4>
+                            <h4>875,000</h4>
+                            <h4>9,000</h4>
+                            <h4>866,000</h4>
+                        </div>
+                    </div>
+                    <div class="list-item-trade">
+                        <div class="trade-top">
+                            <i class="fa-regular fa-square"></i>
+                            <h4>HD000050</h4>
+                            <h4>04/06/2024 21:00</h4>
+                            <h4>Phạm Thu Hương</h4>
+                            <h4>875,000</h4>
+                            <h4>9,000</h4>
+                            <h4>866,000</h4>
+                        </div>
+                    </div>
+                    <div class="list-item-trade">
+                        <div class="trade-top">
+                            <i class="fa-regular fa-square"></i>
+                            <h4>HD000050</h4>
+                            <h4>04/06/2024 21:00</h4>
+                            <h4>Phạm Thu Hương</h4>
+                            <h4>875,000</h4>
+                            <h4>9,000</h4>
+                            <h4>866,000</h4>
+                        </div>
+                    </div>
+                    <div class="list-item-trade">
+                        <div class="trade-top">
+                            <i class="fa-regular fa-square"></i>
+                            <h4>HD000050</h4>
+                            <h4>04/06/2024 21:00</h4>
+                            <h4>Phạm Thu Hương</h4>
+                            <h4>875,000</h4>
+                            <h4>9,000</h4>
+                            <h4>866,000</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        $('.trade-top').click(function () {
+            $('.show-trade').toggleClass('trade-active')
+        })
+
+        $('.thoat').click(function () {
+            $('.show-trade').removeClass('trade-active')
+
+        })
+
+    </script>
 
 </body>
 

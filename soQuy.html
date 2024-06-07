@@ -4,10 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="elements.css">
+    <link rel="stylesheet" href="soQuy.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
 <body>
+    <div class="heading">
+        <div class="brand">
+            <div class="logo">
+                <h1>4'S PIZZA</h1>
+            </div>
+            <div class="brand-left">
+                <div class="brand-left-item">
+                    <span>Chi nhánh trung tâm</span>
+                    <i style="cursor: pointer;" onclick="changeCS()" class="change fa-solid fa-location-dot"></i>
+                    <div class="changeBrand">
+                        <a href="CoSo1.html" class="brand1">Chi nhánh 1</a>
+                        <a href="CoSo2.html" class="brand2">Chi nhánh 2</a>
+                    </div>
+                </div>
+                <div class="brand-left-item">
+                    <span>Thiết lập</span>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="brand-left-item">
+                    <span>0399395344</span>
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-left">
+                <ul>
+                    <li><i class="fa-solid fa-eye"></i><a class="whiteColor" href="Home.html">Tổng quan</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="Products.html">Hàng hoá</a></li>
+                    <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="elements.html">Nguyên liệu</a></li>
+                    <li><i class="fa-brands fa-buromobelexperte"></i><a class="whiteColor"
+                            href="Room.html">Phòng/Bàn</a></li>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i><a class="whiteColor"
+                            href="giaoDich.html">Giao dịch</a>
+                    </li>
+                    <li><i class="fa-solid fa-user-tie"></i><a class="whiteColor" href="">Khách hàng</a></li>
+                    <li><i class="fa-solid fa-users"></i><a class="whiteColor">Nhân viên</a></li>
+                    <li><i class="fa-solid fa-dollar-sign"></i><a class="whiteColor" href="">Sổ quỹ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="body-left">
+            <div class="search">
+                <h3 class="search-head">Tìm kiếm</h3>
+                <div class="search-group">
+                    <input type="text" class="search-input-Ele" name="" placeholder="Theo mã, tên hàng" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="menu-head">Loại thực đơn</h3>
+                <div class="box-flex">
+                    <label for="food">Đồ ăn</label>
+                    <input type="checkbox" name="food" id="food">
+                </div>
+                <div class="box-flex">
+                    <label for="drink">Đồ uống</label>
+                    <input type="checkbox" name="drink" id="drink">
+                </div>
+                <div class="box-flex">
+                    <label for="khac">Khác</label>
+                    <input type="checkbox" name="khac" id="khac">
+                </div>
+            </div>
+            <div class="goods">
+                <h3 class="goods-head">Loại hàng</h3>
+                <div class="box-flex">
+                    <label for="normal">Hàng hoá thường</label><br>
+                    <input type="checkbox" name="normal" id="normal">
+                </div>
+                <div class="box-flex">
+                    <label for="cook">Chế biến</label><br>
+                    <input type="checkbox" name="cook" id="cook">
+                </div>
+                <div class="box-flex">
+                    <label for="service">Dịch vụ</label><br>
+                    <input type="checkbox" name="service" id="service">
+                </div>
+                <div class="box-flex">
+                    <label for="khac2">Combo-đóng gói</label><br>
+                    <input type="checkbox" name="khac2" id="khac2">
+                </div>
+            </div>
+            <div class="group-goods">
+                <h3 class="group-goods-head">Tất cả</h3>
+                <ul class="goods-list">
+                    <li>Bia & Thuốc lá</li>
+                    <li>Classic Cocktils</li>
+                    <li>Món khai vị</li>
+                    <li>Súp</li>
+                    <li>Tea</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="name-top">
+                <h2 class="name-product">Sổ quỹ</h2>
+                <button onclick="add()" class="add"><i class="fa-solid fa-file-export"></i>Xuat file<i
+                        class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <div class="total-fund">
+                <div class="fund-top">
+                    <p>Quy dau ky</p>
+                    <p>Tong thu</p>
+                    <p>Tong chi</p>
+                    <p>Ton quy<i class="fa-solid fa-circle-exclamation"></i></p>
+                </div>
+                <div class="fund-bot">
+                    <p style="color: rgb(0, 139, 139);                    ;">5,007,500</p>
+                    <p style="color: rgb(14, 131, 173);                    ;">14,290,000</p>
+                    <p style="color: rgb(194, 3, 3);                    ;">-12,557,000</p>
+                    <p style="color: rgb(79, 158, 0);                    ;">6,659,500</p>
+                </div>
+            </div>
+
+            <div class="total-table-list">
+                <div class="total-item-top">
+                    <p>Ma phieu</p>
+                    <p>Thoi gian</p>
+                    <p>Loai thu chi</p>
+                    <p>Nguoi nop/nhan</p>
+                    <p>Gia tri</p>
+                </div>
+                <div class="total-box">
+                    <div class="total-item">
+                        <p>TTPN000050</p>
+                        <p>04/06/2024 21:00</p>
+                        <p>Chi tien tra NCC</p>
+                        <p>Cong Ty Hoang Gia</p>
+                        <p>-904,000</p>
+                    </div>
+                    <div class="show-trade">
+                        <div class="show-trade-top">
+                            <div class="trade-item">
+                                <div class="flex">
+                                    <p>Mã phieu:</p>
+                                    <p style="font-weight: bold;">TTPN000050</p>
+                                </div>
+                                <div class="flex">
+                                    <p>Thoi gian:</p>
+                                    <p>04/06/2024 21:00</p>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div class="flex">
+                                    <p>Gia tri : </p>
+                                    <p>-904,000</p>
+                                </div>
+                                <div class="flex">
+                                    <p>Loai thu chi : </p>
+                                    <p>Chi Tien tra NCC</p>
+                                </div>
+                                <div class="flex">
+                                    <p>Ten nguoi nhan : </p>
+                                    <p>Cong Ty Hoang Gia</p>
+                                </div>
+                            </div>
+
+                            <div class="trade-item">
+                                <div class="flex">
+                                    <p>Trang thai:</p>
+                                    <p>Hoan Thanh</p>
+                                </div>
+                                <div class="flex">
+                                    <p>Nguoi tao:</p>
+                                    <p>Ba Duc</p>
+                                </div>
+                                <div class="flex">
+                                    <p>Chi nhanh:</p>
+                                    <p>Chi nhanh trung tam</p>
+                                </div>
+                                <div class="flex">
+                                    <p>Nhan vien:</p>
+                                    <select name="user" id="">
+                                        <option value="">Huong-Ke toan</option>
+                                        <option value="">Hoang-Kinh doanh</option>
+                                    </select>
+                                </div>
+                                <div class="flex">
+                                    <p>Nhom nguoi nhan:</p>
+                                    <p>Nha cung cap</p>
+                                </div>
+
+                            </div>
+                            <div class="trade-item">
+                                <div class="flex">
+                                    <i style="color: #ccc;" class="fa-solid fa-pencil"></i>
+                                    <p style="color: #ccc;">Ghi chu ...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="show-trade-bot">
+
+                            <div class="btn-gr">
+                                <button class="file"><i class="fa-solid fa-file-export"></i>Xuat file</button>
+                                <button class="copy"><i class="fa-regular fa-copy"></i>Sao chep</button>
+                                <button style="background-color: rgb(232, 78, 78);" class="thoat"><i
+                                        class="fa-solid fa-xmark"></i>Huy bo</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-item">
+                        <p>TTPN000050</p>
+                        <p>04/06/2024 21:00</p>
+                        <p>Chi tien tra NCC</p>
+                        <p>Cong Ty Hoang Gia</p>
+                        <p>-904,000</p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-item">
+                        <p>TTPN000050</p>
+                        <p>04/06/2024 21:00</p>
+                        <p>Chi tien tra NCC</p>
+                        <p>Cong Ty Hoang Gia</p>
+                        <p>-904,000</p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-item">
+                        <p>TTPN000050</p>
+                        <p>04/06/2024 21:00</p>
+                        <p>Chi tien tra NCC</p>
+                        <p>Cong Ty Hoang Gia</p>
+                        <p>-904,000</p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-item">
+                        <p>TTPN000050</p>
+                        <p>04/06/2024 21:00</p>
+                        <p>Chi tien tra NCC</p>
+                        <p>Cong Ty Hoang Gia</p>
+                        <p>-904,000</p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-item">
+                        <p>TTPN000050</p>
+                        <p>04/06/2024 21:00</p>
+                        <p>Chi tien tra NCC</p>
+                        <p>Cong Ty Hoang Gia</p>
+                        <p>-904,000</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        $('.total-item').click(function () {
+            $('.show-trade').toggleClass('trade-active')
+        })
+        $('.thoat').click(function () {
+            $('.show-trade').removeClass('trade-active')
+
+        })
+
+    </script>
 
 </body>
 

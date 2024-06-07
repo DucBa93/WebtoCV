@@ -1,0 +1,106 @@
+.total-fund {
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.fund-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin: 5px;
+}
+
+.fund-bot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+    gap: 25px;
+}
+
+.fund-bot p {
+    font-weight: bolder;
+}
+
+.total-item-top {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcf4fc;
+}
+
+.total-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.total-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d4d3d3;
+    cursor: pointer;
+}
+
+.show-trade {
+    padding: 15px 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.trade-active {
+    display: flex;
+}
+
+.show-trade-top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.trade-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.trade-item:nth-child(2) {
+    flex: 2;
+}
+
+.trade-item:nth-child(3) {
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.flex input,
+.flex select {
+    width: 200px;
+    border: none;
+}
+
+.flex p {
+    margin-right: 20px;
+}
+
+.total-item-bot {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+}

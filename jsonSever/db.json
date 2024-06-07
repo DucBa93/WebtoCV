@@ -1,24 +1,85 @@
 {
   "products": [
     {
-      "id": 1,
       "maPro": "SP2003",
-      "image": "./image/lemon juice.webp",
-      "name": "Hanh la",
-      "type": "Gia vi che bien",
-      "cost": 10000,
-      "sale": 15000,
-      "remaining": 100
+      "name": "chanh",
+      "image": "./image/img3.png",
+      "type": "gia vi",
+      "cost": "2000",
+      "sale": "3000",
+      "remaining": "90",
+      "transpot": "",
+      "id": "1"
     },
     {
-      "id": 2,
       "maPro": "SP2004",
-      "image": "./image/img2.png",
       "name": "Hanh kho",
+      "image": "./image/img2.png",
       "type": "Gia vi che bien",
-      "cost": 10000,
-      "sale": 15000,
-      "remaining": 90
+      "cost": "15000",
+      "sale": "10000",
+      "remaining": 70,
+      "transpot": "20",
+      "id": "2"
+    }
+  ],
+  "productsCS1": [
+    {
+      "maPro": "SP2003",
+      "name": "chanh",
+      "image": "./image/img3.png",
+      "type": "gia vi",
+      "cost": "3000",
+      "sale": "2000",
+      "remaining": "20",
+      "transpot": 0,
+      "id": "1"
+    },
+    {
+      "maPro": "SP2004",
+      "name": "Hanh kho",
+      "image": "./image/img2.png",
+      "type": "Gia vi che bien",
+      "cost": "15000",
+      "sale": "10000",
+      "remaining": "20",
+      "transpot": 0,
+      "id": "2"
+    }
+  ],
+  "goods": [
+    {
+      "maPro": "J97",
+      "name": "Orange Juice",
+      "image": "./image/pizachay.jpeg",
+      "type": "gia vi",
+      "typeGoods": "Do an nhanh",
+      "cost": "3000",
+      "sale": "1000",
+      "remaining": "95",
+      "id": "1"
+    },
+    {
+      "maPro": "J98",
+      "name": "Pizza bo sot vang",
+      "image": "./image/pizzaHS.jpg",
+      "type": "Gia vi che bien",
+      "typeGoods": "dich vu",
+      "cost": "15000",
+      "sale": "10000",
+      "remaining": 70,
+      "id": "2"
+    },
+    {
+      "id": "1bee",
+      "maPro": "123",
+      "name": "Gia vi sa te",
+      "image": "./image/pizzaXX.jpeg",
+      "type": "12",
+      "typeGoods": "do an nhanh",
+      "cost": "2000",
+      "sale": "5000",
+      "remaining": 70
     }
   ]
 }

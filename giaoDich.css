@@ -1,0 +1,104 @@
+.list-item-trade {
+    display: flex;
+    flex-direction: column;
+}
+
+.trade-top {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #818181;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.show-trade {
+    padding: 15px 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.trade-active {
+    display: flex;
+}
+
+.show-trade-top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.trade-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.trade-item:nth-child(2) {
+    flex: 2;
+}
+
+.trade-item:nth-child(3) {
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.flex input,
+.flex select {
+    width: 200px;
+    border: none;
+}
+
+.flex p {
+    margin-right: 20px;
+}
+
+.mid-container {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.mid-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #666;
+}
+
+.header {
+    border: 1px solid rgb(51, 131, 193);
+    background-color: rgb(186, 217, 242);
+}
+
+.show-trade-bot {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.total-item {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-gr {
+    margin-top: 15px;
+}
+
+.thoat {
+    background-color: rgb(232, 83, 83);
+}

@@ -48,7 +48,8 @@
                     <li><i class="fa-solid fa-box"></i><a class="whiteColor" href="elements.html">Nguyên liệu</a></li>
                     <li><i class="fa-brands fa-buromobelexperte"></i><a class="whiteColor"
                             href="Room.html">Phòng/Bàn</a></li>
-                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i><a class="whiteColor" href="">Giao dịch</a>
+                    <li><i class="fa-solid fa-arrow-right-arrow-left"></i><a class="whiteColor"
+                            href="giaoDich.html">Giao dịch</a>
                     </li>
                     <li><i class="fa-solid fa-user-tie"></i><a class="whiteColor" href="customer.html">Khách hàng</a>
                     </li>
@@ -68,7 +69,7 @@
             <div class="search">
                 <h3 class="search-head">Tìm kiếm</h3>
                 <div class="search-group">
-                    <input type="text" class="search-input" name="" placeholder="Theo mã, tên hàng" id="">
+                    <input type="text" class="search-input-goods" name="" placeholder="Theo mã, tên hàng" id="">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
@@ -134,114 +135,42 @@
                     <h4>Tồn kho</h4>
                 </div>
 
-                <!-- <div onclick="showInfo2()" class="item-show2">
-                    <div class="list-item odd">
-                        <i class="fa-regular fa-star"></i>
-                        <h4>SP00021</h4>
-                        <h4>Orange Juice</h4>
-                        <h4>Khác</h4>
-                        <h4>15,000</h4>
-                        <h4>7,000</h4>
-                        <h4 class="tonKhoTop2">1,005</h4>
-                    </div>
-                    <div class="item-info2">
-                        <div class="info2-wrapper">
-                            <p class="head-info">Orange Juice</p>
-                            <div class="sale-type">
-                                <p><i class="fa-solid fa-check"></i>Bán trực tiếp</p>
-                                <p><i class="fa-solid fa-xmark"></i>Không tích điểm</p>
-                                <p><i class="fa-solid fa-xmark"></i>Không là món thêm</p>
-                            </div>
-                            <div class="sale-body">
-                                <div class="sale-body-left">
-                                    <img src="./image/lemon juice.webp" class=""
-                                        style="width: 200px; height: 250px;object-fit: cover;" alt="">
+                <div class="list-goods">
 
-                                </div>
-                                <div class="sale-body-right">
-                                    <p>Mã hàng hoá: <span class="property0">SP00021</span></p>
-                                    <p>Tên hàng: <span class="property1">Orange Juice</span></p>
-                                    <p>Loại hàng: <span class="property2">Đồ uống</span></p>
-                                    <p>Nhóm hàng: <span class="property3">Hàng hoá thường</span></p>
-                                    <p>Giá bán: <span class="property4">15,000</span></p>
-                                    <p>Giá vốn: <span class="property5">7,000</span></p>
-                                    <p>Tồn kho: <span class="tonKho">1005</span></p>
-
-                                </div>
-                            </div>
-                            <div class="button-product-gr">
-                                <button onclick="update()" class="update"><i class="fa-solid fa-check"></i>Cap
-                                    nhat</button>
-                                <button onclick="deleteSP()" class="delete"><i
-                                        class="fa-regular fa-trash-can"></i>Xoa</button>
-                                <button onclick="transpotSP()" class="delete"><i
-                                        class="fa-regular fa-trash-can"></i>Chuyen
-                                    nguyen lieu</button>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                </div>
 
             </div>
+
         </div>
+    </div>
 
 
     </div>
 
 
-    <div class="product-show ">
-        <div class="product-add-info">
-            <div class="huy">
-                <p class="head">Them hang hoa</p>
-                <i onclick="cancel()" style="cursor: pointer;" class="fa-solid fa-xmark cancel"></i>
+    <div class="addPro-form">
+        <div class="addPro-container">
+            <div class="addPro-flex">
+                <h3>Thong tin san pham</h3>
+                <i style="cursor: pointer;" class="fa-solid fa-xmark hideForm"></i>
             </div>
-            <p class="info">Thong tin</p>
-            <div class="product-body">
-                <div class="product-left">
-                    <div class="left-item">
-                        <p>Ma hang hoa</p>
-                        <input type="text" class="ma" placeholder="Nhap ma hang hoa" name="" id="">
-                    </div>
-                    <div class="left-item">
-                        <p>Ten hang</p>
-                        <input type="text" class="name" placeholder="Nhap ten " name="" id="">
-                    </div>
-                    <div class="left-item">
-                        <p>Loai thuc don</p>
-                        <input type="text" class="type" placeholder="Nhap loai hang" name="" id="">
-                    </div>
-                    <div class="left-item">
-                        <p>Nhom hang</p>
-                        <input type="text" class="group" placeholder="Nhap nhom hang" name="" id="">
-                    </div>
-                </div>
-                <div class="product-right">
-                    <div class="right-item">
-                        <p>Gia von</p>
-                        <input type="text" placeholder="Nhap gia von" class="cost" name="" id="">
-                    </div>
-                    <div class="right-item">
-                        <p>Gia ban</p>
-                        <input type="text" placeholder="Nhap gia ban" class="sale" name="" id="">
-                    </div>
-                    <div class="right-item">
-                        <p>Tồn kho</p>
-                        <input type="text" placeholder="Nhap số lượng tồn kho" class="SL" name="" id="">
-                    </div>
-                </div>
-            </div>
-            <h4>Chọn ảnh</h4>
-            <form action="">
-                <img src="" id="image" width="200" height="200" alt="">
-                <input type="file" id="imageFile" onchange="chooseFile(this)" accept="image/gif, image/jpeg, image/png"
-                    name="">
-            </form>
-            <div class="button-gr">
-                <button onclick="addProduct()" class="save">
-                    Save
-                </button>
-                <button onclick="cancel()" class="cancel">Cancel</button>
-            </div>
+            <label for="maSP">Ma san pham</label>
+            <input type="text" name="maSP" class="maSP">
+            <label for="namreSP">Ten nguyen lieu</label>
+            <input type="text" name="nameSP" class="nameSP">
+            <label for="img">Chon anh</label>
+            <input type="file" name="" class="img">
+            <label for="typeSP">Loai thuc don</label>
+            <input type="text" name="typeSP" class="typeSP">
+            <label for="typeSP">Loai hang</label>
+            <input type="text" name="typeSP" class="typeGoodsSP">
+            <label for="saleSP">Gia ban</label>
+            <input type="text" name="saleSP" class="saleSP">
+            <label for="costSP">Gia von</label>
+            <input type="text" name="costSP" class="costSP">
+            <label for="remainSP">Ton kho</label>
+            <input type="text" name="remainSP" class="remainSP">
+            <button class="addElement">Them san pham</button>
         </div>
     </div>
 
@@ -249,7 +178,7 @@
 
 
 
-    <script src="jquery.js"></script>
+    <script src="goods.js"></script>
 </body>
 
 </html>

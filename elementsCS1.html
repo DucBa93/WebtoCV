@@ -56,11 +56,30 @@
                 </ul>
             </div>
             <div class="nav-right">
-                <i class="fa-solid fa-bell"></i>
-
+                <i class="fa-solid fa-bell notify"></i>
+                <div class="tb-num">1</div>
             </div>
         </div>
     </div>
+
+    <style>
+        .notify {
+            position: relative;
+        }
+
+        .tb-num {
+            position: absolute;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            line-height: 20px;
+            background-color: red;
+            color: #fff;
+            margin-left: 15px;
+            top: 80px;
+        }
+    </style>
 
     <div class="main-body">
         <div class="body-left">
@@ -133,19 +152,10 @@
                     <h4>Tồn kho</h4>
                 </div>
 
-                <div class="item-show">
-                    <div class="list-item odd">
-                        <i class="fa-regular fa-star"></i>
-                        <h4>SP00021</h4>
-                        <h4>Orange Juice</h4>
-                        <h4>Khác</h4>
-                        <h4>15,000</h4>
-                        <h4>7,000</h4>
-                        <h4 class="tonKhoTopCS1">0</h4>
-                    </div>
-                    <div class="item-info3">
-                    </div>
+                <div class="list-elements-CS1">
+
                 </div>
+
             </div>
         </div>
 
@@ -153,59 +163,12 @@
     </div>
 
 
-    <div class="product-show ">
-        <div class="product-add-info">
-            <div class="huy">
-                <p class="head">Them hang hoa</p>
-                <i onclick="cancel()" style="cursor: pointer;" class="fa-solid fa-xmark cancel"></i>
-            </div>
-            <p class="info">Thong tin</p>
-            <div class="product-body">
-                <div class="product-left">
-                    <div class="left-item">
-                        <p>Ma hang hoa</p>
-                        <input type="text" class="ma" placeholder="Nhap ma hang hoa" name="" id="">
-                    </div>
-                    <div class="left-item">
-                        <p>Ten hang</p>
-                        <input type="text" class="name" placeholder="Nhap ten " name="" id="">
-                    </div>
-                    <div class="left-item">
-                        <p>Loai thuc don</p>
-                        <input type="text" class="type" placeholder="Nhap loai hang" name="" id="">
-                    </div>
-                    <div class="left-item">
-                        <p>Nhom hang</p>
-                        <input type="text" class="group" placeholder="Nhap nhom hang" name="" id="">
-                    </div>
-                </div>
-                <div class="product-right">
-                    <div class="right-item">
-                        <p>Gia von</p>
-                        <input type="text" placeholder="Nhap gia von" class="cost" name="" id="">
-                    </div>
-                    <div class="right-item">
-                        <p>Gia ban</p>
-                        <input type="text" placeholder="Nhap gia ban" class="sale" name="" id="">
-                    </div>
-                    <div class="right-item">
-                        <p>Tồn kho</p>
-                        <input type="text" placeholder="Nhap số lượng tồn kho" class="SL" name="" id="">
-                    </div>
-                </div>
-            </div>
-            <h4>Chọn ảnh</h4>
-            <form action="">
-                <img src="" id="image" width="200" height="200" alt="">
-                <input type="file" id="imageFile" onchange="chooseFile(this)" accept="image/gif, image/jpeg, image/png"
-                    name="">
-            </form>
-            <div class="button-gr">
-                <button onclick="addProduct()" class="save">
-                    Save
-                </button>
-                <button onclick="cancel()" class="cancel">Cancel</button>
-            </div>
+    <div class="tb-show ">
+        <div class="tb-container">
+            <i style="cursor: pointer; float: right;" class="fa-solid fa-xmark tb-cancel"></i>
+            <h2 style="text-align: center; margin-bottom: 10px;">Thong Bao</h2>
+            <p style="margin: 5px;">Ban vua duoc chuyen <span class="tb-number"></span> kg chanh tu co so trung tam </p>
+            <button style="margin-top: 15px;" class="confirm">Xac nhan</button>
         </div>
     </div>
 
